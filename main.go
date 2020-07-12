@@ -36,10 +36,12 @@ func main() {
 		pokemonResp, err = pokeapiClient.FetchPokemon(*PokemonID)
 	case *PokemonName != "text":
 		pokemonResp, err = pokeapiClient.FetchPokemon(*PokemonName)
+	default:
+		flag.Usage()
+		os.Exit(0)
 	}
 	if err != nil {
 		log.Println(err)
-		os.Exit(0)
 	}
 
 	if *outputType == "json" {
