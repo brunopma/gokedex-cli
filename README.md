@@ -15,6 +15,9 @@ After installing the package, just go to the project root and write:
 go build .
 ```
 
+## Download
+Pre-built binary file for UNIX of this project can be downloaded from [Releases page](https://github.com/brunopma/gokedex-cli/releases)
+
 ## Usage:
 
 * Fetching pokemon by name:
