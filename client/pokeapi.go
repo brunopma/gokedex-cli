@@ -71,7 +71,7 @@ func (hc *PokeapiClient) FetchPokemon(p interface{}) (model.Pokemon, error) {
 	defer resp.Body.Close()
 
 	if resp.StatusCode >= 400 {
-		return model.Pokemon{}, errors.New("Resource not found, maybe name mispelling pokemon name or inexistent search iD?")
+		return model.Pokemon{}, errors.New("Resource not found, maybe name mispelling pokemon name or inexistent search ID?")
 	}
 
 	var PokemonResp model.PokemonResponse
